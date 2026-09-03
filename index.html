@@ -807,18 +807,10 @@
       </div>
     </div>
 
-    <div id="certEmpty" class="empty-card" style="margin-top:18px; display:none;">
-      <div class="empty-icon">✳️</div>
-      <div class="empty-title">Aucune certification pour le moment</div>
-      <div class="empty-desc">Utilise le champ ci-dessous pour en ajouter une nouvelle.</div>
-    </div>
-
-    <div style="margin-top:22px;">
-      <button id="certLockBtn" class="chip">🔒 Ajouter une certification</button>
-      <div id="certAddWrap" class="cert-add" style="display:none; margin-top:14px;">
-        <input type="text" id="certInput" placeholder="Nom de la certification (ex. PCEP, ITIL Foundation...)">
-        <button id="certAddBtn" class="btn primary">+ Ajouter</button>
-      </div>
+    <div class="soft-row" style="margin-top:22px;">
+      <div class="soft">RÉSEAUX</div>
+      <div class="soft">CYBERSÉCURITÉ</div>
+      <div class="soft">PACKET TRACER</div>
     </div>
   </div>
 </section>
@@ -832,6 +824,9 @@
       <div class="hero-cta" style="margin-top:22px; margin-bottom:30px;">
         <a href="https://nexuscoworking.barcelona/" class="btn primary" target="_blank" rel="noopener noreferrer">
           🌐 Découvrir Nexus Coworking
+        </a>
+        <a href="rapport-stage-nexus-coworking-kyshone-james.docx" class="btn ghost" target="_blank" rel="noopener noreferrer">
+          📄 Consulter mon rapport de stage
         </a>
       </div>
 
@@ -857,19 +852,48 @@
         <div class="packet-body"><div class="packet-body-inner fiche">
           <p><strong>Ce que j'ai fait :</strong> démarrage de l'ordinateur depuis une clé USB bootable / un disque dur externe, installation des pilotes et des différentes mises à jour, renommage du poste, création d'un compte administrateur local.</p>
           <p><strong>Compétence BTS :</strong> administration système (Bloc 1 — support et mise à disposition).</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/windows/deployment/install-upgrade/create-installation-media-for-windows" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              📘 Guide Microsoft — support d’installation Windows
+            </a>
+            <a href="https://support.microsoft.com/fr-fr/windows/hardware/drivers/automatically-get-recommended-and-updated-hardware-drivers" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🔧 Guide Microsoft — pilotes et mises à jour
+            </a>
+          </div>
         </div></div>
       </div>
       <div class="packet" data-cat="system">
         <div class="packet-head"><div><div class="packet-id">TASK · SYSTEM</div><div class="packet-title">Restauration de l'image d'un poste</div></div><span class="packet-toggle">+</span></div>
-        <div class="packet-body"><div class="packet-body-inner">Restauration de l'image système d'un ordinateur de l'espace café / coworking.</div></div>
+        <div class="packet-body"><div class="packet-body-inner fiche">
+          <p>Restauration de l'image système d'un ordinateur de l'espace café / coworking.</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/windows/deployment/install-upgrade/reinstall-windows-with-the-installation-media" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              💾 Guide Microsoft — réinstallation / récupération Windows
+            </a>
+          </div>
+        </div></div>
       </div>
       <div class="packet" data-cat="system">
         <div class="packet-head"><div><div class="packet-id">TASK · SYSTEM</div><div class="packet-title">Préparation d'une image système de référence (Salle 2)</div></div><span class="packet-toggle">+</span></div>
-        <div class="packet-body"><div class="packet-body-inner">Installation de l'image système ("golden image") de la salle 2 sur un disque dur externe, afin de pouvoir la déployer ensuite sur l'ordinateur de la salle café.</div></div>
+        <div class="packet-body"><div class="packet-body-inner fiche">
+          <p>Installation de l'image système ("golden image") de la salle 2 sur un disque dur externe, afin de pouvoir la déployer ensuite sur l'ordinateur de la salle café.</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/windows/experience/backup-recovery/recovery-options-in-windows" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🧩 Guide Microsoft — options de récupération Windows
+            </a>
+          </div>
+        </div></div>
       </div>
       <div class="packet" data-cat="reseau">
         <div class="packet-head"><div><div class="packet-id">TASK · RÉSEAU</div><div class="packet-title">Câblage Ethernet — plafond, salle C</div></div><span class="packet-toggle">+</span></div>
-        <div class="packet-body"><div class="packet-body-inner">Intervention sur l'infrastructure Ethernet et le câblage réseau de la salle C.</div></div>
+        <div class="packet-body"><div class="packet-body-inner fiche">
+          <p>Intervention sur l'infrastructure Ethernet et le câblage réseau de la salle C.</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://www.cisco.com/site/us/en/learn/topics/networking/what-is-ethernet.html" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🌐 Comprendre Ethernet — Cisco
+            </a>
+          </div>
+        </div></div>
       </div>
       <div class="packet" data-cat="reseau">
         <div class="packet-head"><div><div class="packet-id">TASK · RÉSEAU</div><div class="packet-title">Solution réseau à double connexion — TP-Link Omada ER605</div></div><span class="packet-toggle">+</span></div>
@@ -878,6 +902,15 @@
           <p><strong>Ce que j'ai fait :</strong> configuration d'une solution réseau à double connexion avec un routeur TP-Link Omada ER605, et mise en place du Link Backup afin de permettre le basculement automatique vers une seconde connexion en cas de défaillance de la connexion principale.</p>
           <p><strong>Test réalisé :</strong> débranchement volontaire de la connexion principale (WAN1) pour vérifier le basculement automatique vers la connexion secondaire (WAN2) via le Link Backup, puis reconnexion pour observer le retour sur la ligne principale.</p>
           <p><strong>Compétence BTS :</strong> concevoir, installer et déployer une solution d'infrastructure réseau (Bloc 2 — SISR).</p>
+          <div class="hero-cta" style="margin-top:16px; margin-bottom:4px;">
+            <a href="https://www.tp-link.com/fr/business-networking/vpn-router/er605/v1/" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🖼️ Voir le ER605 — visuels constructeur
+            </a>
+            <a href="https://www.tp-link.com/fr/support/faq/3202/" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              ⚙️ Voir un exemple de configuration Link Backup
+            </a>
+          </div>
+          <p style="margin-top:10px; font-size:12px; color:var(--ink-faint);"><em>Ressources externes utilisées comme illustration : elles ne constituent pas des photos prises pendant mon stage.</em></p>
         </div></div>
       </div>
       <div class="packet" data-cat="reseau">
@@ -890,6 +923,11 @@
           <p><strong>Objectif :</strong> garantir une connexion internet permanente pour le Wi-Fi de Nexus Coworking.</p>
           <p><strong>Ce que j'ai fait :</strong> recherche sur l'installation d'un switch réseau dédié au Wi-Fi (WLAN), avec la contrainte de ne pas réaliser l'installation pendant les heures d'ouverture habituelles pour ne pas couper le service.</p>
           <p><strong>Compétence BTS :</strong> concevoir une solution d'infrastructure réseau (Bloc 2 — SISR).</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://www.tp-link.com/fr/support/faq/1072/" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              📡 Exemple TP-Link — configuration d’un point d’accès Wi-Fi
+            </a>
+          </div>
         </div></div>
       </div>
       <div class="packet" data-cat="parc">
@@ -899,6 +937,11 @@
           <p><strong>Étiquetage :</strong> identification physique de chaque station (ex. DS-01 pour "Docking Station 1").</p>
           <p><strong>Ce que j'ai fait ensuite :</strong> recherche de solution en cas de dysfonctionnement, puis mise à jour de l'inventaire.</p>
           <p><strong>Compétence BTS :</strong> gérer le patrimoine informatique (Bloc 1).</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/surface/accessories/certified/set-up-and-use-microsoft-audio-dock" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🔌 Exemple Microsoft — station d’accueil USB-C / écran
+            </a>
+          </div>
         </div></div>
       </div>
       <div class="packet" data-cat="parc">
@@ -907,6 +950,11 @@
           <p><strong>Ce que j'ai fait :</strong> test du fonctionnement de chaque microphone sur un poste de référence, étiquetage physique (suite des numéros M0 à M3 déjà utilisés).</p>
           <p><strong>Ce que j'ai fait ensuite :</strong> recherche de solution en cas de dysfonctionnement, puis mise à jour de l'inventaire.</p>
           <p><strong>Compétence BTS :</strong> gérer le patrimoine informatique (Bloc 1).</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/windows/hardware/drivers/fix-microphone-problems" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🎙️ Guide Microsoft — résolution des problèmes de microphone
+            </a>
+          </div>
         </div></div>
       </div>
       <div class="packet" data-cat="admin">
@@ -920,6 +968,19 @@
           <p><strong>Étiquetage physique :</strong> chaque ordinateur et chaque écran/TV (TV-1-1 à TV-6-D), en cohérence avec la numérotation des salles.</p>
           <p><strong>Documentation :</strong> mise à jour des fiches dans le CRM de Nexus (branchements HDMI notamment), création de nouveaux utilisateurs dans JumpCloud.</p>
           <p><strong>Compétence BTS :</strong> exploiter, dépanner et superviser une solution d'infrastructure réseau (Bloc 2) ; sécuriser les équipements et gérer les accès (Bloc 3).</p>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://support.microsoft.com/fr-fr/surface/accessories/certified/set-up-and-use-microsoft-audio-dock" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🖥️ Exemple Microsoft — USB-C, HDMI et écran externe
+            </a>
+          </div>
+          <div class="hero-cta" style="margin-top:14px; margin-bottom:4px;">
+            <a href="https://jumpcloud.com/support/install-the-windows-agent" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              👤 Documentation JumpCloud — agent Windows
+            </a>
+            <a href="https://jumpcloud.com/support/bind-users-to-devices" class="btn ghost" target="_blank" rel="noopener noreferrer">
+              🔗 Documentation JumpCloud — utilisateurs et appareils
+            </a>
+          </div>
         </div></div>
       </div>
       <div class="packet" data-cat="admin">
@@ -927,6 +988,7 @@
         <div class="packet-body"><div class="packet-body-inner">Génération des certificats destinés aux étudiants dans le cadre des activités de Nexus Coworking.</div></div>
       </div>
     </div>
+    <p style="margin-top:16px; font-size:12px; color:var(--ink-faint);"><em>Les liens présents dans les missions renvoient vers des documentations ou ressources techniques externes utilisées pour illustrer les technologies abordées. Ils ne constituent pas des captures réalisées pendant mon stage.</em></p>
   </div>
 </section>
 
@@ -1004,7 +1066,7 @@
   <div class="wrap reveal">
     <div class="eyebrow">À côté du stage</div>
     <h2 class="sec-title">Mobilité Erasmus+ à Barcelone</h2>
-    <p class="sec-intro">En parallèle du stage, découverte de la ville et de ses lieux emblématiques.</p>
+    <p class="sec-intro">Cette mobilité m'a permis de développer mon autonomie, mon adaptation à un nouvel environnement et mon ouverture professionnelle, en parallèle du stage à Nexus Coworking.</p>
     <div class="places">
       <span class="place">Sagrada Família</span>
       <span class="place">Camp Nou</span>
@@ -1032,7 +1094,7 @@
     <div class="eyebrow">Dernière étape</div>
     <h2 class="sec-title">Contact</h2>
     <div class="contact-box">
-      <p>Mes coordonnées professionnelles.</p>
+      <p>Pour un échange professionnel, vous pouvez me contacter par email ou via LinkedIn.</p>
       <div class="contact-links">
         <a class="contact-link" href="mailto:kyshonejames@gmail.com">
           <span class="contact-icon">✉️</span>
@@ -1172,55 +1234,6 @@
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
     document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
-  })();
-
-  // NOTE: ce verrou est une simple protection côté client (mot de passe visible
-  // dans le code source). Il empêche un visiteur ordinaire d'ajouter une fausse
-  // certification en un clic, mais ce n'est pas une sécurité réelle. Change la
-  // valeur ci-dessous quand tu veux.
-  const CERT_PASSCODE = "kyshone-sio";
-  (function(){
-    const input = document.getElementById('certInput');
-    const addBtn = document.getElementById('certAddBtn');
-    const list = document.getElementById('certList');
-    const empty = document.getElementById('certEmpty');
-    const lockBtn = document.getElementById('certLockBtn');
-    const addWrap = document.getElementById('certAddWrap');
-
-    lockBtn.addEventListener('click', () => {
-      if(addWrap.style.display === 'none'){
-        const code = window.prompt("Mot de passe pour ajouter une certification :");
-        if(code === CERT_PASSCODE){
-          addWrap.style.display = 'flex';
-          lockBtn.textContent = '🔓 Ajout activé';
-          input.focus();
-        } else if(code !== null){
-          window.alert("Mot de passe incorrect.");
-        }
-      } else {
-        addWrap.style.display = 'none';
-        lockBtn.textContent = '🔒 Ajouter une certification';
-      }
-    });
-
-    function addCert(){
-      const val = input.value.trim();
-      if(!val) return;
-      empty.style.display = 'none';
-      const row = document.createElement('div');
-      row.className = 'cert-row';
-      row.innerHTML = '<span class="cert-row-name"></span><button class="cert-remove" aria-label="Supprimer">✕</button>';
-      row.querySelector('.cert-row-name').textContent = val;
-      row.querySelector('.cert-remove').addEventListener('click', () => {
-        row.remove();
-        if(!list.children.length) empty.style.display = '';
-      });
-      list.appendChild(row);
-      input.value = '';
-      input.focus();
-    }
-    addBtn.addEventListener('click', addCert);
-    input.addEventListener('keydown', e => { if(e.key === 'Enter'){ e.preventDefault(); addCert(); } });
   })();
 
   document.querySelectorAll('.veille-card[data-url]').forEach(card => {
